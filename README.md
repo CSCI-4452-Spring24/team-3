@@ -1,6 +1,6 @@
 # [Backstage](https://backstage.io)
 
-## Requirements for development:
+## Requirements to install the app in development stage:
 
 1. Unix-based operating system, such as Linux, MacOS or Windows Subsystem for Linux/
 2. On Debian/Ubuntu you will want to have the make and build-essential packages installed. 
