@@ -15,7 +15,7 @@ The next tree structure details where we are going to store our credentials:
 	   --->config.txt
 ```
 
-The .aws directory is not going to be track by git if you follow the tree structure. 
+The .aws directory is not going to be tracked by git if you follow the tree structure. 
 
 The config.txt file should contain your profiles (one for the aws dev account and one for the aws prod account).
 To find your credentials you should log in into the AWS access portal of this organization.
@@ -26,13 +26,13 @@ Edit the text that is between the square brackets:
 
 Now you are going to repeat the process with the other account.
 After adding the credentials for both accounts, include:
-```json
+```
 [default]
 region = us-east-1
 ```
 
 This how your config.txt file should look after this process. 
-```json
+```
 [default]
 region = us-east-1
 
