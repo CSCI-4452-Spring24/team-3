@@ -52,3 +52,13 @@ site
 
 # E2E test reports
 e2e-test-report/
+
+# aws config
+infrastructure/.aws/
+
+# terraform files
+infrastructure/*/terraform.tfstate
+infrastructure/*/terraform.tfstate.backup
+infrastructure/*/.terraform
+infrastructure/*/.terraform.lock.hcl
+
