@@ -1,0 +1,8 @@
+# aws config
+infrastructure/.aws/
+
+# terraform files
+infrastructure/*/terraform.tfstate
+infrastructure/*/terraform.tfstate.backup
+infrastructure/*/.terraform
+infrastructure/*/.terraform.lock.hcl
