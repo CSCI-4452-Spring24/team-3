@@ -6,3 +6,4 @@ infrastructure/*/terraform.tfstate
 infrastructure/*/terraform.tfstate.backup
 infrastructure/*/.terraform
 infrastructure/*/.terraform.lock.hcl
+infrastructure/*/dev-var.tfvars
