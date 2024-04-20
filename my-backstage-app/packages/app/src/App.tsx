@@ -1,6 +1,8 @@
 import React from 'react';
 import { Navigate, Route } from 'react-router-dom';
 import { apiDocsPlugin, ApiExplorerPage } from '@backstage/plugin-api-docs';
+import { githubAuthApiRef } from '@backstage/core-plugin-api';
+
 import {
   CatalogEntityPage,
   CatalogIndexPage,
@@ -58,7 +60,18 @@ const app = createApp({
     });
   },
   components: {
-    SignInPage: props => <SignInPage {...props} auto providers={['guest']} />,
+    SignInPage: props => (
+      <SignInPage
+      {...props}
+      auto
+      providers={[{
+        id: 'github',
+        title: 'Sign in with GitHub',
+        message: 'Please sign in using your GitHub account.',
+        apiRef: githubAuthApiRef,
+      }]}
+    />
+    ),
   },
 });
 
