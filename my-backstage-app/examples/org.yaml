@@ -3,15 +3,24 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: guest
+  name: IkerAlessandro
 spec:
-  memberOf: [guests]
+  memberOf: [team3]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: guests
+  name: team3
 spec:
   type: team
   children: []
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ericg37
+spec:
+  memberOf: [team3]
+---
