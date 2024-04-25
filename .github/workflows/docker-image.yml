@@ -22,7 +22,7 @@ jobs:
       run: yarn install --frozen-lockfile
 
     - name: Build Backend
-      run: yarn build:backend
+      run: yarn build
 
     - name: Build Docker Image
       run: docker build -t my-backstage-app . --file my-backstage-app/Dockerfile
