@@ -3,8 +3,12 @@ name: CI/CD intergration
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'backstage/**'
   pull_request:
     branches: [ "main" ]
+    paths:
+      - 'backstage/**'
 
 jobs:
   build-and-publish:
